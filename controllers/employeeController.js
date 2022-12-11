@@ -7,7 +7,7 @@ const agregarEmpleado = async (req, res) => {
     try {
         const savedEmployee = await employee.save();
         res.json(savedEmployee);
-        console.log(employee);
+        
     } catch (error) {
         console.log(error);
     }
@@ -47,7 +47,7 @@ const actualizarEmpleado = async (req, res) => {
         return res.json({ msg: 'Acción no valida' });
     }
 
-    //Actualizar paciente
+    //Actualizar empleado
     employee.name = req.body.name || employee.name;
     employee.email = req.body.email || employee.email;
     employee.password = req.body.password || employee.password;
