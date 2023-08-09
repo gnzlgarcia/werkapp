@@ -1,2 +1,2 @@
 # werkapp
-A really simple employee management system.
+A really simple CRUD for a future employee management system.
